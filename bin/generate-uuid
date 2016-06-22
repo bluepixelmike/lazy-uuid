@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'lazy-uuid'
+
+puts Uuid.generate.to_s
