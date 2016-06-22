@@ -3,4 +3,5 @@
 require 'bundler/setup'
 require 'lazy-uuid'
 
-puts Uuid.generate.to_s
+count = ARGV.any? ? ARGV.first.to_i : 1
+count.times { puts Uuid.generate.to_s }
