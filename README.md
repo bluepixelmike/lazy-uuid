@@ -36,7 +36,34 @@ Or install it yourself as:
 Usage
 -----
 
-TODO
+### Script Usage
+
+Include the `Uuid` class by doing:
+
+```ruby
+require 'lazy-uuid'
+```
+
+To generate a new UUID:
+
+```ruby
+uuid = Uuid.generate
+```
+
+To create a new UUID from a value:
+
+```ruby
+value = "\xde\x30\x5d\x54\x75\xb4\x43\x1b\xad\xb2\xeb\x6b\x9e\x54\x60\x14"
+uuid = Uuid.new(value)
+```
+
+To parse an existing UUID string:
+```ruby
+str = 'de305d54-75b4-431b-adb2-eb6b9e546014'
+uuid = Uuid.parse(str)
+```
+
+Use `#to_s` to generate a human-readable representation of the UUID.
 
 Development
 -----------
