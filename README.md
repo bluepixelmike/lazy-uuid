@@ -65,6 +65,22 @@ uuid = Uuid.parse(str)
 
 Use `#to_s` to generate a human-readable representation of the UUID.
 
+### Command-line Usage
+
+Run the `generate-uuid` script to generate and output a UUID.
+
+    $ generate-uuid
+    c06b98c9-4cd6-4265-97ef-3299027cde88
+
+Or pass a number as an argument to generate multiple UUIDs.
+
+    $ generate-uuid 5
+    cf803c2a-a04b-45ff-be3b-294b70a5d8d5
+    4e5a5172-79f4-4cd2-9649-fc5f6b682679
+    62b4226d-23fb-4e5f-856b-1dfbf0448719
+    2d259f9d-bd4d-4c56-b3d2-71305f5f73d9
+    6d5755b0-78fa-4bfe-a8e5-0b16fb941e8a
+
 Development
 -----------
 
